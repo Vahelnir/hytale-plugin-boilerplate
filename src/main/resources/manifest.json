@@ -1,0 +1,9 @@
+{
+  "Group": "fr.vahelnir",
+  "Name": "test-plugin",
+  "Version": "1.0.0",
+  "Website": "https://nothing.com/",
+  "Main": "fr.vahelnir.testplugin.TestPlugin",
+  "ServerVersion": "*",
+  "Dependencies": {}
+}
