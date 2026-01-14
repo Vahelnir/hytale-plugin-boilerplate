@@ -27,6 +27,6 @@ tasks.register<JavaExec>("runServer") {
         "server/HytaleServer.jar",
         "build/libs/${project.name}-${project.version}.jar"
     )
-    args = listOf("--assets", "Assets.zip")
+    args = listOf("--assets", "Assets.zip", "--disable-sentry")
     standardInput = System.`in`
 }
