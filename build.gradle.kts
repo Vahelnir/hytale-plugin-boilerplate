@@ -19,12 +19,6 @@ dependencies {
     compileOnly(files("server/HytaleServer.jar"))
 }
 
-tasks.register<Copy>("deploy") {
-    dependsOn("build")
-    from("build/libs/${project.name}-${project.version}.jar")
-    into("server/Plugins")
-}
-
 tasks.register<JavaExec>("runServer") {
     dependsOn("build")
     workingDir = file("server")
