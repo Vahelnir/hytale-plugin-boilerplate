@@ -1,0 +1,31 @@
+$Common = "../Common.ui";
+
+$Common.@PageOverlay {
+  $Common.@Container {
+    Anchor: (Width: 1050, Height: 700);
+
+    #Title {
+      Group {
+        $Common.@Title {
+          @Text = "Incrementer Page";
+        }
+      }
+    }
+
+    #Content {
+      LayoutMode: Left;
+
+      Group {
+        Label #IncrementedValue {
+          Text: "Current Value:";
+        }
+      }
+
+      $Common.@TextButton #IncrementButton {
+        Text: "Increment +1";
+      }
+    }
+  }
+}
+
+$Common.@BackButton {}
